@@ -1,0 +1,312 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../Reaction Timer.gen/sources_1/bd/Reaction_Timer",
+      "name": "Reaction_Timer",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "finite_state_machine_0": "",
+      "clock_divider_0": "",
+      "AnodeDecoder_0": "",
+      "decade_counter_0": "",
+      "decade_counter_1": "",
+      "decade_counter_2": "",
+      "decade_counter_3": "",
+      "DisplaySelector_0": "",
+      "bcd_to_7seg_1": ""
+    },
+    "components": {
+      "finite_state_machine_0": {
+        "vlnv": "xilinx.com:module_ref:finite_state_machine:1.0",
+        "xci_name": "Reaction_Timer_finite_state_machine_0_0",
+        "xci_path": "ip\\Reaction_Timer_finite_state_machine_0_0\\Reaction_Timer_finite_state_machine_0_0.xci",
+        "inst_hier_path": "finite_state_machine_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "finite_state_machine",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "BTNC": {
+            "direction": "I"
+          },
+          "COUNT_1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "COUNT_2": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "COUNT_3": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "COUNT_4": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "counter_en": {
+            "direction": "O"
+          },
+          "counter_rst": {
+            "type": "rst",
+            "direction": "O"
+          },
+          "message": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "clock_divider_0": {
+        "vlnv": "xilinx.com:module_ref:clock_divider:1.0",
+        "xci_name": "Reaction_Timer_clock_divider_0_0",
+        "xci_path": "ip\\Reaction_Timer_clock_divider_0_0\\Reaction_Timer_clock_divider_0_0.xci",
+        "inst_hier_path": "clock_divider_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK100MHZ": {
+            "direction": "I"
+          },
+          "UPPERBOUND": {
+            "direction": "I",
+            "left": "27",
+            "right": "0"
+          },
+          "SLOWCLK": {
+            "direction": "O"
+          }
+        }
+      },
+      "AnodeDecoder_0": {
+        "vlnv": "xilinx.com:module_ref:AnodeDecoder:1.0",
+        "xci_name": "Reaction_Timer_AnodeDecoder_0_0",
+        "xci_path": "ip\\Reaction_Timer_AnodeDecoder_0_0\\Reaction_Timer_AnodeDecoder_0_0.xci",
+        "inst_hier_path": "AnodeDecoder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AnodeDecoder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DISPLAY_SELECTED": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "ANODE": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "decade_counter_0": {
+        "vlnv": "xilinx.com:module_ref:decade_counter:1.0",
+        "xci_name": "Reaction_Timer_decade_counter_0_0",
+        "xci_path": "ip\\Reaction_Timer_decade_counter_0_0\\Reaction_Timer_decade_counter_0_0.xci",
+        "inst_hier_path": "decade_counter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decade_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "INCREMENT": {
+            "direction": "I"
+          },
+          "COUNT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "decade_counter_1": {
+        "vlnv": "xilinx.com:module_ref:decade_counter:1.0",
+        "xci_name": "Reaction_Timer_decade_counter_1_0",
+        "xci_path": "ip\\Reaction_Timer_decade_counter_1_0\\Reaction_Timer_decade_counter_1_0.xci",
+        "inst_hier_path": "decade_counter_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decade_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "INCREMENT": {
+            "direction": "I"
+          },
+          "COUNT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "decade_counter_2": {
+        "vlnv": "xilinx.com:module_ref:decade_counter:1.0",
+        "xci_name": "Reaction_Timer_decade_counter_2_0",
+        "xci_path": "ip\\Reaction_Timer_decade_counter_2_0\\Reaction_Timer_decade_counter_2_0.xci",
+        "inst_hier_path": "decade_counter_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decade_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "INCREMENT": {
+            "direction": "I"
+          },
+          "COUNT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "decade_counter_3": {
+        "vlnv": "xilinx.com:module_ref:decade_counter:1.0",
+        "xci_name": "Reaction_Timer_decade_counter_3_0",
+        "xci_path": "ip\\Reaction_Timer_decade_counter_3_0\\Reaction_Timer_decade_counter_3_0.xci",
+        "inst_hier_path": "decade_counter_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decade_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "INCREMENT": {
+            "direction": "I"
+          },
+          "COUNT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "DisplaySelector_0": {
+        "vlnv": "xilinx.com:module_ref:DisplaySelector:1.0",
+        "xci_name": "Reaction_Timer_DisplaySelector_0_0",
+        "xci_path": "ip\\Reaction_Timer_DisplaySelector_0_0\\Reaction_Timer_DisplaySelector_0_0.xci",
+        "inst_hier_path": "DisplaySelector_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "DisplaySelector",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DISPLAY_CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "CURRENT_DISPLAY": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "bcd_to_7seg_1": {
+        "vlnv": "xilinx.com:module_ref:bcd_to_7seg:1.0",
+        "xci_name": "Reaction_Timer_bcd_to_7seg_1_0",
+        "xci_path": "ip\\Reaction_Timer_bcd_to_7seg_1_0\\Reaction_Timer_bcd_to_7seg_1_0.xci",
+        "inst_hier_path": "bcd_to_7seg_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bcd_to_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "bcd": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "seg": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "decade_counter_1_TICK": {
+        "ports": [
+          "decade_counter_1/TICK",
+          "decade_counter_2/EN"
+        ]
+      }
+    }
+  }
+}

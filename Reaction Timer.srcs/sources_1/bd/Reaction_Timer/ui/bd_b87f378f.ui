@@ -1,0 +1,24 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.978462",
+   "Default View_TopLeft":"-75,-478",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst finite_state_machine_0 -pg 1 -lvl 2 -x 440 -y 150 -defaultsOSRD
+preplace inst clock_divider_0 -pg 1 -lvl 3 -x 800 -y 0 -defaultsOSRD
+preplace inst AnodeDecoder_0 -pg 1 -lvl 3 -x 800 -y -120 -defaultsOSRD
+preplace inst decade_counter_0 -pg 1 -lvl 1 -x 100 -y -60 -defaultsOSRD
+preplace inst decade_counter_1 -pg 1 -lvl 1 -x 100 -y -200 -defaultsOSRD
+preplace inst decade_counter_2 -pg 1 -lvl 1 -x 100 -y -340 -defaultsOSRD
+preplace inst decade_counter_3 -pg 1 -lvl 1 -x 100 -y 80 -defaultsOSRD
+preplace inst DisplaySelector_0 -pg 1 -lvl 2 -x 440 -y -10 -defaultsOSRD
+preplace inst bcd_to_7seg_1 -pg 1 -lvl 2 -x 440 -y -240 -defaultsOSRD
+preplace netloc decade_counter_1_TICK 1 0 2 -40 -420 240
+levelinfo -pg 1 -60 100 440 800 980
+pagesize -pg 1 -db -bbox -sgen -60 -430 980 450
+"
+}
+{
+   "da_clkrst_cnt":"2"
+}

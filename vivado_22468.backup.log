@@ -1,0 +1,292 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed May  7 10:48:54 2025
+# Process ID: 22468
+# Current directory: B:/enel373/PersonalRXtimer/ReactionTimer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21680 B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.xpr
+# Log file: B:/enel373/PersonalRXtimer/ReactionTimer/vivado.log
+# Journal file: B:/enel373/PersonalRXtimer/ReactionTimer\vivado.jou
+# Running On: DESKTOP-H6N6V0T, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 17088 MB
+#-----------------------------------------------------------
+start_gui
+open_project {B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.xpr}
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at B:/Vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'B:/enel373/RxTimer/Reaction Timer' since last save.
+WARNING: [Project 1-312] File not found as 'B:/enel373/PersonalRXtimer/Nexys-4-DDR-Master.xdc'; using path 'B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'B:/Vivado/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1103.820 ; gain = 305.148
+update_compile_order -fileset sources_1
+update_module_reference Reaction_Timer_finite_state_machine_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'counter_rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Reading block design file <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd>...
+Adding component instance block -- xilinx.com:module_ref:finite_state_machine:1.0 - finite_state_machine_0
+Adding component instance block -- xilinx.com:module_ref:clock_divider:1.0 - clock_divider_0
+Adding component instance block -- xilinx.com:module_ref:AnodeDecoder:1.0 - AnodeDecoder_0
+Adding component instance block -- xilinx.com:module_ref:decade_counter:1.0 - decade_counter_0
+Adding component instance block -- xilinx.com:module_ref:decade_counter:1.0 - decade_counter_1
+Adding component instance block -- xilinx.com:module_ref:decade_counter:1.0 - decade_counter_2
+Adding component instance block -- xilinx.com:module_ref:decade_counter:1.0 - decade_counter_3
+Adding component instance block -- xilinx.com:module_ref:DisplaySelector:1.0 - DisplaySelector_0
+Adding component instance block -- xilinx.com:module_ref:bcd_to_7seg:1.0 - bcd_to_7seg_1
+Successfully read diagram <Reaction_Timer> from block design file <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd>
+Upgrading 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd'
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_finite_state_machine_0_0 to use current project options
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+upgrade_ip: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1152.367 ; gain = 33.258
+update_module_reference: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1152.367 ; gain = 39.898
+update_module_reference Reaction_Timer_clock_divider_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd'
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_clock_divider_0_0 to use current project options
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+update_module_reference Reaction_Timer_AnodeDecoder_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd'
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_AnodeDecoder_0_0 to use current project options
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+update_module_reference {Reaction_Timer_decade_counter_0_0 Reaction_Timer_decade_counter_1_0 Reaction_Timer_decade_counter_2_0 Reaction_Timer_decade_counter_3_0}
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RESET' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd'
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_decade_counter_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_decade_counter_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_decade_counter_2_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_decade_counter_3_0 to use current project options
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+update_module_reference Reaction_Timer_DisplaySelector_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'DISPLAY_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'DISPLAY_CLK' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd'
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_DisplaySelector_0_0 to use current project options
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+update_module_reference Reaction_Timer_bcd_to_7seg_1_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd'
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_bcd_to_7seg_1_0 to use current project options
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+close [ open {B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/new/mux.vhd} w ]
+add_files {{B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/new/mux.vhd}}
+update_compile_order -fileset sources_1
+close [ open {B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/new/PRNG.vhd} w ]
+add_files {{B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/new/PRNG.vhd}}
+update_compile_order -fileset sources_1
+update_module_reference Reaction_Timer_clock_divider_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd'
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_clock_divider_0_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'CLK100MHZ'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'CLK'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Reaction_Timer_clock_divider_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'Reaction_Timer_clock_divider_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+update_module_reference Reaction_Timer_bcd_to_7seg_1_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd'
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_bcd_to_7seg_1_0 to use current project options
+WARNING: [IP_Flow 19-4705] Upgraded port 'seg' vector [0:7] differs from original vector [7:0]
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dp'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Reaction_Timer_bcd_to_7seg_1_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'Reaction_Timer_bcd_to_7seg_1_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+create_bd_cell -type module -reference clock_divider clock_divider_1
+connect_bd_net [get_bd_pins clock_divider_1/SLOWCLK] [get_bd_pins DisplaySelector_0/DISPLAY_CLK]
+create_bd_cell -type module -reference mux mux_0
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/new/mux.vhd'.
+WARNING: [IP_Flow 19-965] There are no component ports to infer bus interfaces.
+ERROR: [IP_Flow 19-748] Component Definition 'xilinx.com:module_ref:mux:1.0 (mux_v1_0)': No ports found. There must be an interface when the IP has at least one source file group.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'mux'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'mux'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference mux -name mux_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference sevseg_mux sevseg_mux_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+connect_bd_net [get_bd_pins sevseg_mux_0/DP] [get_bd_pins bcd_to_7seg_1/dp]
+connect_bd_net [get_bd_pins sevseg_mux_0/BCD] [get_bd_pins bcd_to_7seg_1/bcd]
+connect_bd_net [get_bd_pins DisplaySelector_0/CURRENT_DISPLAY] [get_bd_pins sevseg_mux_0/display_select]
+connect_bd_net [get_bd_pins finite_state_machine_0/message] [get_bd_pins sevseg_mux_0/message]
+connect_bd_net [get_bd_pins finite_state_machine_0/counter_en] [get_bd_pins decade_counter_3/EN]
+connect_bd_net [get_bd_pins decade_counter_0/EN] [get_bd_pins finite_state_machine_0/counter_en]
+connect_bd_net [get_bd_pins decade_counter_1/EN] [get_bd_pins finite_state_machine_0/counter_en]
+delete_bd_objs [get_bd_nets decade_counter_1_TICK]
+connect_bd_net [get_bd_pins decade_counter_2/EN] [get_bd_pins finite_state_machine_0/counter_en]
+connect_bd_net [get_bd_pins decade_counter_2/RESET] [get_bd_pins decade_counter_1/RESET]
+connect_bd_net [get_bd_pins decade_counter_0/RESET] [get_bd_pins decade_counter_2/RESET]
+connect_bd_net [get_bd_pins decade_counter_3/RESET] [get_bd_pins decade_counter_2/RESET]
+connect_bd_net [get_bd_pins finite_state_machine_0/counter_rst] [get_bd_pins decade_counter_2/RESET]
+connect_bd_net [get_bd_pins decade_counter_3/COUNT] [get_bd_pins finite_state_machine_0/COUNT_4]
+connect_bd_net [get_bd_pins decade_counter_0/COUNT] [get_bd_pins finite_state_machine_0/COUNT_1]
+connect_bd_net [get_bd_pins decade_counter_1/COUNT] [get_bd_pins finite_state_machine_0/COUNT_2]
+connect_bd_net [get_bd_pins decade_counter_2/COUNT] [get_bd_pins finite_state_machine_0/COUNT_3]
+connect_bd_net [get_bd_pins decade_counter_0/TICK] [get_bd_pins decade_counter_1/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_1/TICK] [get_bd_pins decade_counter_2/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_2/TICK] [get_bd_pins decade_counter_3/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_0/INCREMENT] [get_bd_pins clock_divider_0/SLOWCLK]
+connect_bd_net [get_bd_pins finite_state_machine_0/clk] [get_bd_pins clock_divider_0/SLOWCLK]
+create_bd_port -dir I BTNC
+connect_bd_net [get_bd_ports BTNC] [get_bd_pins finite_state_machine_0/BTNC]
+create_bd_port -dir I CPU_RESETN
+connect_bd_net [get_bd_ports CPU_RESETN] [get_bd_pins finite_state_machine_0/rst]
+create_bd_port -dir I CLK100MHZ
+connect_bd_net [get_bd_ports CLK100MHZ] [get_bd_pins clock_divider_0/CLK]
+connect_bd_net [get_bd_ports CLK100MHZ] [get_bd_pins clock_divider_1/CLK]
+connect_bd_net [get_bd_pins AnodeDecoder_0/DISPLAY_SELECTED] [get_bd_pins DisplaySelector_0/CURRENT_DISPLAY]
+create_bd_port -dir O -from 7 -to 0 AN
+set_property location {1130 -114} [get_bd_ports AN]
+set_property location {1135 -132} [get_bd_ports AN]
+startgroup
+connect_bd_net [get_bd_ports AN] [get_bd_pins AnodeDecoder_0/ANODE]
+endgroup
+make_wrapper -files [get_files {{B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd}}] -top
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/clock_divider_0/UPPERBOUND
+/clock_divider_1/UPPERBOUND
+
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+VHDL Output written to : b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd
+VHDL Output written to : b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/sim/Reaction_Timer.vhd
+VHDL Output written to : b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/hdl/Reaction_Timer_wrapper.vhd
+add_files -norecurse {{b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/hdl/Reaction_Timer_wrapper.vhd}}
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+set_property location {1 -8 441} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins clock_divider_1/UPPERBOUND]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins clock_divider_0/UPPERBOUND]
+update_compile_order -fileset sources_1
+startgroup
+set_property CONFIG.CONST_WIDTH {27} [get_bd_cells xlconstant_0]
+endgroup
+startgroup
+set_property CONFIG.CONST_WIDTH {28} [get_bd_cells xlconstant_0]
+endgroup
+startgroup
+set_property CONFIG.CONST_WIDTH {28} [get_bd_cells xlconstant_1]
+endgroup
+save_bd_design
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+create_bd_port -dir O -from 7 -to 0 C
+startgroup
+connect_bd_net [get_bd_ports C] [get_bd_pins bcd_to_7seg_1/seg]
+endgroup
+save_bd_design
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+make_wrapper -files [get_files {{B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd}}] -top
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+VHDL Output written to : b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd
+VHDL Output written to : b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/sim/Reaction_Timer.vhd
+VHDL Output written to : b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/hdl/Reaction_Timer_wrapper.vhd
+update_module_reference Reaction_Timer_bcd_to_7seg_1_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd'
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_bcd_to_7seg_1_0 to use current project options
+INFO: [IP_Flow 19-4702] Upgrade has renamed port 'dp' as 'DP'
+WARNING: [IP_Flow 19-4704] Upgraded port 'DP' out differs from original direction in
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'seg'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'CA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'CB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'CC'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'CD'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'CE'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'CF'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'CG'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dcp'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Reaction_Timer_bcd_to_7seg_1_0'. These changes may impact your design.
+ERROR: [BD 41-249] Net 'sevseg_mux_0_DP' already has a source port '/sevseg_mux_0/DP' connected to it; Another source port cannot be connected to this net.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'Reaction_Timer_bcd_to_7seg_1_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+ERROR: [Common 17-39] 'upgrade_ip' failed due to earlier errors.
+ERROR: [Common 17-39] 'upgrade_ip' failed due to earlier errors.
+delete_bd_objs [get_bd_nets bcd_to_7seg_1_seg] [get_bd_ports C]
+update_module_reference Reaction_Timer_bcd_to_7seg_1_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd'
+INFO: [IP_Flow 19-3420] Updated Reaction_Timer_bcd_to_7seg_1_0 to use current project options
+Wrote  : <B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.srcs\sources_1\bd\Reaction_Timer\Reaction_Timer.bd> 
+Wrote  : <B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/ui/bd_b87f378f.ui> 
+create_bd_cell -type module -reference bcd_to_7seg bcd_to_7seg_0

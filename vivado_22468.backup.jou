@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed May  7 10:48:54 2025
+# Process ID: 22468
+# Current directory: B:/enel373/PersonalRXtimer/ReactionTimer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21680 B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.xpr
+# Log file: B:/enel373/PersonalRXtimer/ReactionTimer/vivado.log
+# Journal file: B:/enel373/PersonalRXtimer/ReactionTimer\vivado.jou
+# Running On: DESKTOP-H6N6V0T, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 17088 MB
+#-----------------------------------------------------------
+start_gui
+open_project {B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.xpr}
+update_compile_order -fileset sources_1
+update_module_reference Reaction_Timer_finite_state_machine_0_0
+update_module_reference Reaction_Timer_clock_divider_0_0
+update_module_reference Reaction_Timer_AnodeDecoder_0_0
+update_module_reference {Reaction_Timer_decade_counter_0_0 Reaction_Timer_decade_counter_1_0 Reaction_Timer_decade_counter_2_0 Reaction_Timer_decade_counter_3_0}
+update_module_reference Reaction_Timer_DisplaySelector_0_0
+update_module_reference Reaction_Timer_bcd_to_7seg_1_0
+close [ open {B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/new/mux.vhd} w ]
+add_files {{B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/new/mux.vhd}}
+update_compile_order -fileset sources_1
+close [ open {B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/new/PRNG.vhd} w ]
+add_files {{B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/new/PRNG.vhd}}
+update_compile_order -fileset sources_1
+update_module_reference Reaction_Timer_clock_divider_0_0
+update_module_reference Reaction_Timer_bcd_to_7seg_1_0
+create_bd_cell -type module -reference clock_divider clock_divider_1
+connect_bd_net [get_bd_pins clock_divider_1/SLOWCLK] [get_bd_pins DisplaySelector_0/DISPLAY_CLK]
+create_bd_cell -type module -reference mux mux_0
+create_bd_cell -type module -reference sevseg_mux sevseg_mux_0
+connect_bd_net [get_bd_pins sevseg_mux_0/DP] [get_bd_pins bcd_to_7seg_1/dp]
+connect_bd_net [get_bd_pins sevseg_mux_0/BCD] [get_bd_pins bcd_to_7seg_1/bcd]
+connect_bd_net [get_bd_pins DisplaySelector_0/CURRENT_DISPLAY] [get_bd_pins sevseg_mux_0/display_select]
+connect_bd_net [get_bd_pins finite_state_machine_0/message] [get_bd_pins sevseg_mux_0/message]
+connect_bd_net [get_bd_pins finite_state_machine_0/counter_en] [get_bd_pins decade_counter_3/EN]
+connect_bd_net [get_bd_pins decade_counter_0/EN] [get_bd_pins finite_state_machine_0/counter_en]
+connect_bd_net [get_bd_pins decade_counter_1/EN] [get_bd_pins finite_state_machine_0/counter_en]
+delete_bd_objs [get_bd_nets decade_counter_1_TICK]
+connect_bd_net [get_bd_pins decade_counter_2/EN] [get_bd_pins finite_state_machine_0/counter_en]
+connect_bd_net [get_bd_pins decade_counter_2/RESET] [get_bd_pins decade_counter_1/RESET]
+connect_bd_net [get_bd_pins decade_counter_0/RESET] [get_bd_pins decade_counter_2/RESET]
+connect_bd_net [get_bd_pins decade_counter_3/RESET] [get_bd_pins decade_counter_2/RESET]
+connect_bd_net [get_bd_pins finite_state_machine_0/counter_rst] [get_bd_pins decade_counter_2/RESET]
+connect_bd_net [get_bd_pins decade_counter_3/COUNT] [get_bd_pins finite_state_machine_0/COUNT_4]
+connect_bd_net [get_bd_pins decade_counter_0/COUNT] [get_bd_pins finite_state_machine_0/COUNT_1]
+connect_bd_net [get_bd_pins decade_counter_1/COUNT] [get_bd_pins finite_state_machine_0/COUNT_2]
+connect_bd_net [get_bd_pins decade_counter_2/COUNT] [get_bd_pins finite_state_machine_0/COUNT_3]
+connect_bd_net [get_bd_pins decade_counter_0/TICK] [get_bd_pins decade_counter_1/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_1/TICK] [get_bd_pins decade_counter_2/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_2/TICK] [get_bd_pins decade_counter_3/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_0/INCREMENT] [get_bd_pins clock_divider_0/SLOWCLK]
+connect_bd_net [get_bd_pins finite_state_machine_0/clk] [get_bd_pins clock_divider_0/SLOWCLK]
+create_bd_port -dir I BTNC
+connect_bd_net [get_bd_ports BTNC] [get_bd_pins finite_state_machine_0/BTNC]
+create_bd_port -dir I CPU_RESETN
+connect_bd_net [get_bd_ports CPU_RESETN] [get_bd_pins finite_state_machine_0/rst]
+create_bd_port -dir I CLK100MHZ
+connect_bd_net [get_bd_ports CLK100MHZ] [get_bd_pins clock_divider_0/CLK]
+connect_bd_net [get_bd_ports CLK100MHZ] [get_bd_pins clock_divider_1/CLK]
+connect_bd_net [get_bd_pins AnodeDecoder_0/DISPLAY_SELECTED] [get_bd_pins DisplaySelector_0/CURRENT_DISPLAY]
+create_bd_port -dir O -from 7 -to 0 AN
+set_property location {1130 -114} [get_bd_ports AN]
+set_property location {1135 -132} [get_bd_ports AN]
+startgroup
+connect_bd_net [get_bd_ports AN] [get_bd_pins AnodeDecoder_0/ANODE]
+endgroup
+make_wrapper -files [get_files {{B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd}}] -top
+add_files -norecurse {{b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/hdl/Reaction_Timer_wrapper.vhd}}
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1
+endgroup
+set_property location {1 -8 441} [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins clock_divider_1/UPPERBOUND]
+connect_bd_net [get_bd_pins xlconstant_1/dout] [get_bd_pins clock_divider_0/UPPERBOUND]
+update_compile_order -fileset sources_1
+startgroup
+set_property CONFIG.CONST_WIDTH {27} [get_bd_cells xlconstant_0]
+endgroup
+startgroup
+set_property CONFIG.CONST_WIDTH {28} [get_bd_cells xlconstant_0]
+endgroup
+startgroup
+set_property CONFIG.CONST_WIDTH {28} [get_bd_cells xlconstant_1]
+endgroup
+save_bd_design
+create_bd_port -dir O -from 7 -to 0 C
+startgroup
+connect_bd_net [get_bd_ports C] [get_bd_pins bcd_to_7seg_1/seg]
+endgroup
+save_bd_design
+make_wrapper -files [get_files {{B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd}}] -top
+update_module_reference Reaction_Timer_bcd_to_7seg_1_0
+delete_bd_objs [get_bd_nets bcd_to_7seg_1_seg] [get_bd_ports C]
+update_module_reference Reaction_Timer_bcd_to_7seg_1_0
+create_bd_cell -type module -reference bcd_to_7seg bcd_to_7seg_0

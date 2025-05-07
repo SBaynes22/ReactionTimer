@@ -1,112 +1,87 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0x15E07CAF8A049422",
       "device": "xc7a100tcsg324-1",
       "gen_directory": "../../../../Reaction Timer.gen/sources_1/bd/Reaction_Timer",
       "name": "Reaction_Timer",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2022.2"
+      "tool_version": "2022.2",
+      "validated": "true"
     },
     "design_tree": {
-      "finite_state_machine_0": "",
-      "clock_divider_0": "",
       "AnodeDecoder_0": "",
       "decade_counter_0": "",
       "decade_counter_1": "",
       "decade_counter_2": "",
       "decade_counter_3": "",
       "DisplaySelector_0": "",
-      "bcd_to_7seg_1": ""
+      "clock_divider_0": "",
+      "bcd_to_7seg_1": "",
+      "clock_divider_1": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "sevseg_mux_0": "",
+      "decade_counter_4": "",
+      "decade_counter_5": "",
+      "decade_counter_6": "",
+      "decade_counter_7": "",
+      "finite_state_machine_0": ""
+    },
+    "ports": {
+      "BTNC": {
+        "direction": "I"
+      },
+      "CPU_RESETN": {
+        "direction": "I"
+      },
+      "CLK100MHZ": {
+        "direction": "I"
+      },
+      "AN": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "CA": {
+        "direction": "O"
+      },
+      "CB": {
+        "direction": "O"
+      },
+      "CC": {
+        "direction": "O"
+      },
+      "CD": {
+        "direction": "O"
+      },
+      "CE": {
+        "direction": "O"
+      },
+      "CF": {
+        "direction": "O"
+      },
+      "CG": {
+        "direction": "O"
+      },
+      "DP": {
+        "direction": "O"
+      },
+      "BTNU": {
+        "direction": "I"
+      },
+      "BTND": {
+        "direction": "I"
+      },
+      "BTNR": {
+        "direction": "I"
+      },
+      "BTNL": {
+        "direction": "I"
+      }
     },
     "components": {
-      "finite_state_machine_0": {
-        "vlnv": "xilinx.com:module_ref:finite_state_machine:1.0",
-        "xci_name": "Reaction_Timer_finite_state_machine_0_0",
-        "xci_path": "ip\\Reaction_Timer_finite_state_machine_0_0\\Reaction_Timer_finite_state_machine_0_0.xci",
-        "inst_hier_path": "finite_state_machine_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "finite_state_machine",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "rst",
-                "value_src": "constant"
-              }
-            }
-          },
-          "rst": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "BTNC": {
-            "direction": "I"
-          },
-          "COUNT_1": {
-            "direction": "I",
-            "left": "3",
-            "right": "0"
-          },
-          "COUNT_2": {
-            "direction": "I",
-            "left": "3",
-            "right": "0"
-          },
-          "COUNT_3": {
-            "direction": "I",
-            "left": "3",
-            "right": "0"
-          },
-          "COUNT_4": {
-            "direction": "I",
-            "left": "3",
-            "right": "0"
-          },
-          "counter_en": {
-            "direction": "O"
-          },
-          "counter_rst": {
-            "type": "rst",
-            "direction": "O"
-          },
-          "message": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          }
-        }
-      },
-      "clock_divider_0": {
-        "vlnv": "xilinx.com:module_ref:clock_divider:1.0",
-        "xci_name": "Reaction_Timer_clock_divider_0_0",
-        "xci_path": "ip\\Reaction_Timer_clock_divider_0_0\\Reaction_Timer_clock_divider_0_0.xci",
-        "inst_hier_path": "clock_divider_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "clock_divider",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "CLK100MHZ": {
-            "direction": "I"
-          },
-          "UPPERBOUND": {
-            "direction": "I",
-            "left": "27",
-            "right": "0"
-          },
-          "SLOWCLK": {
-            "direction": "O"
-          }
-        }
-      },
       "AnodeDecoder_0": {
         "vlnv": "xilinx.com:module_ref:AnodeDecoder:1.0",
         "xci_name": "Reaction_Timer_AnodeDecoder_0_0",
@@ -276,6 +251,31 @@
           }
         }
       },
+      "clock_divider_0": {
+        "vlnv": "xilinx.com:module_ref:clock_divider:1.0",
+        "xci_name": "Reaction_Timer_clock_divider_0_0",
+        "xci_path": "ip\\Reaction_Timer_clock_divider_0_0\\Reaction_Timer_clock_divider_0_0.xci",
+        "inst_hier_path": "clock_divider_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "UPPERBOUND": {
+            "direction": "I",
+            "left": "27",
+            "right": "0"
+          },
+          "SLOWCLK": {
+            "direction": "O"
+          }
+        }
+      },
       "bcd_to_7seg_1": {
         "vlnv": "xilinx.com:module_ref:bcd_to_7seg:1.0",
         "xci_name": "Reaction_Timer_bcd_to_7seg_1_0",
@@ -292,19 +292,600 @@
             "left": "3",
             "right": "0"
           },
-          "seg": {
+          "dcp": {
+            "direction": "I"
+          },
+          "CA": {
+            "direction": "O"
+          },
+          "CB": {
+            "direction": "O"
+          },
+          "CC": {
+            "direction": "O"
+          },
+          "CD": {
+            "direction": "O"
+          },
+          "CE": {
+            "direction": "O"
+          },
+          "CF": {
+            "direction": "O"
+          },
+          "CG": {
+            "direction": "O"
+          },
+          "DP": {
+            "direction": "O"
+          }
+        }
+      },
+      "clock_divider_1": {
+        "vlnv": "xilinx.com:module_ref:clock_divider:1.0",
+        "xci_name": "Reaction_Timer_clock_divider_1_0",
+        "xci_path": "ip\\Reaction_Timer_clock_divider_1_0\\Reaction_Timer_clock_divider_1_0.xci",
+        "inst_hier_path": "clock_divider_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "UPPERBOUND": {
+            "direction": "I",
+            "left": "27",
+            "right": "0"
+          },
+          "SLOWCLK": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "Reaction_Timer_xlconstant_0_0",
+        "xci_path": "ip\\Reaction_Timer_xlconstant_0_0\\Reaction_Timer_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "16960"
+          },
+          "CONST_WIDTH": {
+            "value": "28"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "Reaction_Timer_xlconstant_1_0",
+        "xci_path": "ip\\Reaction_Timer_xlconstant_1_0\\Reaction_Timer_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "16960"
+          },
+          "CONST_WIDTH": {
+            "value": "28"
+          }
+        }
+      },
+      "sevseg_mux_0": {
+        "vlnv": "xilinx.com:module_ref:sevseg_mux:1.0",
+        "xci_name": "Reaction_Timer_sevseg_mux_0_0",
+        "xci_path": "ip\\Reaction_Timer_sevseg_mux_0_0\\Reaction_Timer_sevseg_mux_0_0.xci",
+        "inst_hier_path": "sevseg_mux_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sevseg_mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "display_select": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "message": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "BCD": {
             "direction": "O",
-            "left": "7",
+            "left": "3",
+            "right": "0"
+          },
+          "DCP": {
+            "direction": "O"
+          }
+        }
+      },
+      "decade_counter_4": {
+        "vlnv": "xilinx.com:module_ref:decade_counter:1.0",
+        "xci_name": "Reaction_Timer_decade_counter_4_0",
+        "xci_path": "ip\\Reaction_Timer_decade_counter_4_0\\Reaction_Timer_decade_counter_4_0.xci",
+        "inst_hier_path": "decade_counter_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decade_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "INCREMENT": {
+            "direction": "I"
+          },
+          "COUNT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "decade_counter_5": {
+        "vlnv": "xilinx.com:module_ref:decade_counter:1.0",
+        "xci_name": "Reaction_Timer_decade_counter_5_0",
+        "xci_path": "ip\\Reaction_Timer_decade_counter_5_0\\Reaction_Timer_decade_counter_5_0.xci",
+        "inst_hier_path": "decade_counter_5",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decade_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "INCREMENT": {
+            "direction": "I"
+          },
+          "COUNT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "decade_counter_6": {
+        "vlnv": "xilinx.com:module_ref:decade_counter:1.0",
+        "xci_name": "Reaction_Timer_decade_counter_6_0",
+        "xci_path": "ip\\Reaction_Timer_decade_counter_6_0\\Reaction_Timer_decade_counter_6_0.xci",
+        "inst_hier_path": "decade_counter_6",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decade_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "INCREMENT": {
+            "direction": "I"
+          },
+          "COUNT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "decade_counter_7": {
+        "vlnv": "xilinx.com:module_ref:decade_counter:1.0",
+        "xci_name": "Reaction_Timer_decade_counter_7_0",
+        "xci_path": "ip\\Reaction_Timer_decade_counter_7_0\\Reaction_Timer_decade_counter_7_0.xci",
+        "inst_hier_path": "decade_counter_7",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decade_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "EN": {
+            "direction": "I"
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "INCREMENT": {
+            "direction": "I"
+          },
+          "COUNT": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TICK": {
+            "direction": "O"
+          }
+        }
+      },
+      "finite_state_machine_0": {
+        "vlnv": "xilinx.com:module_ref:finite_state_machine:1.0",
+        "xci_name": "Reaction_Timer_finite_state_machine_0_0",
+        "xci_path": "ip\\Reaction_Timer_finite_state_machine_0_0\\Reaction_Timer_finite_state_machine_0_0.xci",
+        "inst_hier_path": "finite_state_machine_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "finite_state_machine",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "BTNC": {
+            "direction": "I"
+          },
+          "BTNU": {
+            "direction": "I"
+          },
+          "BTND": {
+            "direction": "I"
+          },
+          "BTNR": {
+            "direction": "I"
+          },
+          "BTNL": {
+            "direction": "I"
+          },
+          "COUNT_1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "COUNT_2": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "COUNT_3": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "COUNT_4": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "COUNT_5": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "COUNT_6": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "COUNT_7": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "COUNT_8": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "counter_en": {
+            "direction": "O"
+          },
+          "counter_rst": {
+            "type": "rst",
+            "direction": "O"
+          },
+          "message": {
+            "direction": "O",
+            "left": "31",
             "right": "0"
           }
         }
       }
     },
     "nets": {
+      "AnodeDecoder_0_ANODE": {
+        "ports": [
+          "AnodeDecoder_0/ANODE",
+          "AN"
+        ]
+      },
+      "BTNC_1": {
+        "ports": [
+          "BTNC",
+          "finite_state_machine_0/BTNC"
+        ]
+      },
+      "BTND_1": {
+        "ports": [
+          "BTND",
+          "finite_state_machine_0/BTND"
+        ]
+      },
+      "BTNL_1": {
+        "ports": [
+          "BTNL",
+          "finite_state_machine_0/BTNL"
+        ]
+      },
+      "BTNR_1": {
+        "ports": [
+          "BTNR",
+          "finite_state_machine_0/BTNR"
+        ]
+      },
+      "BTNU_1": {
+        "ports": [
+          "BTNU",
+          "finite_state_machine_0/BTNU"
+        ]
+      },
+      "CLK100MHZ_1": {
+        "ports": [
+          "CLK100MHZ",
+          "clock_divider_0/CLK",
+          "clock_divider_1/CLK"
+        ]
+      },
+      "CPU_RESETN_1": {
+        "ports": [
+          "CPU_RESETN",
+          "finite_state_machine_0/rst"
+        ]
+      },
+      "DisplaySelector_0_CURRENT_DISPLAY": {
+        "ports": [
+          "DisplaySelector_0/CURRENT_DISPLAY",
+          "AnodeDecoder_0/DISPLAY_SELECTED",
+          "sevseg_mux_0/display_select"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "finite_state_machine_0/counter_rst",
+          "decade_counter_2/RESET",
+          "decade_counter_1/RESET",
+          "decade_counter_0/RESET",
+          "decade_counter_3/RESET",
+          "decade_counter_4/RESET",
+          "decade_counter_5/RESET",
+          "decade_counter_6/RESET",
+          "decade_counter_7/RESET"
+        ]
+      },
+      "bcd_to_7seg_1_CA": {
+        "ports": [
+          "bcd_to_7seg_1/CA",
+          "CA"
+        ]
+      },
+      "bcd_to_7seg_1_CB": {
+        "ports": [
+          "bcd_to_7seg_1/CB",
+          "CB"
+        ]
+      },
+      "bcd_to_7seg_1_CC": {
+        "ports": [
+          "bcd_to_7seg_1/CC",
+          "CC"
+        ]
+      },
+      "bcd_to_7seg_1_CD": {
+        "ports": [
+          "bcd_to_7seg_1/CD",
+          "CD"
+        ]
+      },
+      "bcd_to_7seg_1_CE": {
+        "ports": [
+          "bcd_to_7seg_1/CE",
+          "CE"
+        ]
+      },
+      "bcd_to_7seg_1_CF": {
+        "ports": [
+          "bcd_to_7seg_1/CF",
+          "CF"
+        ]
+      },
+      "bcd_to_7seg_1_CG": {
+        "ports": [
+          "bcd_to_7seg_1/CG",
+          "CG"
+        ]
+      },
+      "bcd_to_7seg_1_DP": {
+        "ports": [
+          "bcd_to_7seg_1/DP",
+          "DP"
+        ]
+      },
+      "clock_divider_0_SLOWCLK": {
+        "ports": [
+          "clock_divider_0/SLOWCLK",
+          "decade_counter_0/INCREMENT",
+          "finite_state_machine_0/clk"
+        ]
+      },
+      "clock_divider_1_SLOWCLK": {
+        "ports": [
+          "clock_divider_1/SLOWCLK",
+          "DisplaySelector_0/DISPLAY_CLK"
+        ]
+      },
+      "decade_counter_0_COUNT": {
+        "ports": [
+          "decade_counter_0/COUNT",
+          "finite_state_machine_0/COUNT_1"
+        ]
+      },
+      "decade_counter_0_TICK": {
+        "ports": [
+          "decade_counter_0/TICK",
+          "decade_counter_1/INCREMENT"
+        ]
+      },
+      "decade_counter_1_COUNT": {
+        "ports": [
+          "decade_counter_1/COUNT",
+          "finite_state_machine_0/COUNT_2"
+        ]
+      },
       "decade_counter_1_TICK": {
         "ports": [
           "decade_counter_1/TICK",
-          "decade_counter_2/EN"
+          "decade_counter_2/INCREMENT"
+        ]
+      },
+      "decade_counter_2_COUNT": {
+        "ports": [
+          "decade_counter_2/COUNT",
+          "finite_state_machine_0/COUNT_3"
+        ]
+      },
+      "decade_counter_2_TICK": {
+        "ports": [
+          "decade_counter_2/TICK",
+          "decade_counter_3/INCREMENT"
+        ]
+      },
+      "decade_counter_3_COUNT": {
+        "ports": [
+          "decade_counter_3/COUNT",
+          "finite_state_machine_0/COUNT_4"
+        ]
+      },
+      "decade_counter_3_TICK": {
+        "ports": [
+          "decade_counter_3/TICK",
+          "decade_counter_4/INCREMENT"
+        ]
+      },
+      "decade_counter_4_COUNT": {
+        "ports": [
+          "decade_counter_4/COUNT",
+          "finite_state_machine_0/COUNT_5"
+        ]
+      },
+      "decade_counter_4_TICK": {
+        "ports": [
+          "decade_counter_4/TICK",
+          "decade_counter_5/INCREMENT"
+        ]
+      },
+      "decade_counter_5_COUNT": {
+        "ports": [
+          "decade_counter_5/COUNT",
+          "finite_state_machine_0/COUNT_6"
+        ]
+      },
+      "decade_counter_5_TICK": {
+        "ports": [
+          "decade_counter_5/TICK",
+          "decade_counter_6/INCREMENT"
+        ]
+      },
+      "decade_counter_6_COUNT": {
+        "ports": [
+          "decade_counter_6/COUNT",
+          "finite_state_machine_0/COUNT_7"
+        ]
+      },
+      "decade_counter_6_TICK": {
+        "ports": [
+          "decade_counter_6/TICK",
+          "decade_counter_7/INCREMENT"
+        ]
+      },
+      "decade_counter_7_COUNT": {
+        "ports": [
+          "decade_counter_7/COUNT",
+          "finite_state_machine_0/COUNT_8"
+        ]
+      },
+      "finite_state_machine_0_counter_en": {
+        "ports": [
+          "finite_state_machine_0/counter_en",
+          "decade_counter_3/EN",
+          "decade_counter_0/EN",
+          "decade_counter_1/EN",
+          "decade_counter_2/EN",
+          "decade_counter_4/EN",
+          "decade_counter_5/EN",
+          "decade_counter_6/EN",
+          "decade_counter_7/EN"
+        ]
+      },
+      "finite_state_machine_0_message": {
+        "ports": [
+          "finite_state_machine_0/message",
+          "sevseg_mux_0/message"
+        ]
+      },
+      "sevseg_mux_0_BCD": {
+        "ports": [
+          "sevseg_mux_0/BCD",
+          "bcd_to_7seg_1/bcd"
+        ]
+      },
+      "sevseg_mux_0_DCP": {
+        "ports": [
+          "sevseg_mux_0/DCP",
+          "bcd_to_7seg_1/dcp"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "clock_divider_1/UPPERBOUND"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "clock_divider_0/UPPERBOUND"
         ]
       }
     }

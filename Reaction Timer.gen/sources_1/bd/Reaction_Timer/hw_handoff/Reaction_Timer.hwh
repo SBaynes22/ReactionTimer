@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May  8 01:16:04 2025" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="Reaction_Timer" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="BTNC" SIGIS="undef" SIGNAME="External_Ports_BTNC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="finite_state_machine_0" PORT="BTNC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="CPU_RESETN" SIGIS="undef" SIGNAME="External_Ports_CPU_RESETN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="finite_state_machine_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="CLK100MHZ" SIGIS="undef" SIGNAME="External_Ports_CLK100MHZ">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="clock_divider_1" PORT="CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="AN" RIGHT="0" SIGIS="undef" SIGNAME="AnodeDecoder_0_ANODE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AnodeDecoder_0" PORT="ANODE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CA" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcd_to_7seg_1" PORT="CA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CB" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcd_to_7seg_1" PORT="CB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcd_to_7seg_1" PORT="CC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CD" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcd_to_7seg_1" PORT="CD"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CE" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcd_to_7seg_1" PORT="CE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CF" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CF">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcd_to_7seg_1" PORT="CF"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CG" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CG">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcd_to_7seg_1" PORT="CG"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="DP" SIGIS="undef" SIGNAME="bcd_to_7seg_1_DP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="bcd_to_7seg_1" PORT="DP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTNU" SIGIS="undef" SIGNAME="External_Ports_BTNU">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="finite_state_machine_0" PORT="BTNU"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTND" SIGIS="undef" SIGNAME="External_Ports_BTND">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="finite_state_machine_0" PORT="BTND"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTNR" SIGIS="undef" SIGNAME="External_Ports_BTNR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="finite_state_machine_0" PORT="BTNR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="BTNL" SIGIS="undef" SIGNAME="External_Ports_BTNL">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="finite_state_machine_0" PORT="BTNL"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/AnodeDecoder_0" HWVERSION="1.0" INSTANCE="AnodeDecoder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AnodeDecoder" VLNV="xilinx.com:module_ref:AnodeDecoder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_AnodeDecoder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="2" NAME="DISPLAY_SELECTED" RIGHT="0" SIGIS="undef" SIGNAME="DisplaySelector_0_CURRENT_DISPLAY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DisplaySelector_0" PORT="CURRENT_DISPLAY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="ANODE" RIGHT="0" SIGIS="undef" SIGNAME="AnodeDecoder_0_ANODE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/DisplaySelector_0" HWVERSION="1.0" INSTANCE="DisplaySelector_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DisplaySelector" VLNV="xilinx.com:module_ref:DisplaySelector:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_DisplaySelector_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="DISPLAY_CLK" SIGIS="clk" SIGNAME="clock_divider_1_SLOWCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_1" PORT="SLOWCLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="CURRENT_DISPLAY" RIGHT="0" SIGIS="undef" SIGNAME="DisplaySelector_0_CURRENT_DISPLAY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AnodeDecoder_0" PORT="DISPLAY_SELECTED"/>
+            <CONNECTION INSTANCE="sevseg_mux_0" PORT="display_select"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/bcd_to_7seg_1" HWVERSION="1.0" INSTANCE="bcd_to_7seg_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="bcd_to_7seg" VLNV="xilinx.com:module_ref:bcd_to_7seg:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_bcd_to_7seg_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="bcd" RIGHT="0" SIGIS="undef" SIGNAME="sevseg_mux_0_BCD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sevseg_mux_0" PORT="BCD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="dcp" SIGIS="undef" SIGNAME="sevseg_mux_0_DCP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sevseg_mux_0" PORT="DCP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CA" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CB" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CD" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CE" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CF" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CF">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CF"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CG" SIGIS="undef" SIGNAME="bcd_to_7seg_1_CG">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CG"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DP" SIGIS="undef" SIGNAME="bcd_to_7seg_1_DP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DP"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_0" HWVERSION="1.0" INSTANCE="clock_divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_clock_divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK100MHZ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK100MHZ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="27" NAME="UPPERBOUND" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SLOWCLK" SIGIS="undef" SIGNAME="clock_divider_0_SLOWCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_0" PORT="INCREMENT"/>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_1" HWVERSION="1.0" INSTANCE="clock_divider_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_clock_divider_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK100MHZ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK100MHZ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="27" NAME="UPPERBOUND" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SLOWCLK" SIGIS="undef" SIGNAME="clock_divider_1_SLOWCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DisplaySelector_0" PORT="DISPLAY_CLK"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decade_counter_0" HWVERSION="1.0" INSTANCE="decade_counter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decade_counter" VLNV="xilinx.com:module_ref:decade_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_decade_counter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="finite_state_machine_0_counter_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="finite_state_machine_0_counter_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INCREMENT" SIGIS="undef" SIGNAME="clock_divider_0_SLOWCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="SLOWCLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="COUNT" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_0_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="COUNT_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TICK" SIGIS="undef" SIGNAME="decade_counter_0_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_1" PORT="INCREMENT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decade_counter_1" HWVERSION="1.0" INSTANCE="decade_counter_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decade_counter" VLNV="xilinx.com:module_ref:decade_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_decade_counter_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="finite_state_machine_0_counter_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="finite_state_machine_0_counter_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INCREMENT" SIGIS="undef" SIGNAME="decade_counter_0_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_0" PORT="TICK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="COUNT" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_1_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="COUNT_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TICK" SIGIS="undef" SIGNAME="decade_counter_1_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_2" PORT="INCREMENT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decade_counter_2" HWVERSION="1.0" INSTANCE="decade_counter_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decade_counter" VLNV="xilinx.com:module_ref:decade_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_decade_counter_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="finite_state_machine_0_counter_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="finite_state_machine_0_counter_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INCREMENT" SIGIS="undef" SIGNAME="decade_counter_1_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_1" PORT="TICK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="COUNT" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_2_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="COUNT_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TICK" SIGIS="undef" SIGNAME="decade_counter_2_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_3" PORT="INCREMENT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decade_counter_3" HWVERSION="1.0" INSTANCE="decade_counter_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decade_counter" VLNV="xilinx.com:module_ref:decade_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_decade_counter_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="finite_state_machine_0_counter_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="finite_state_machine_0_counter_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INCREMENT" SIGIS="undef" SIGNAME="decade_counter_2_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_2" PORT="TICK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="COUNT" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_3_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="COUNT_4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TICK" SIGIS="undef" SIGNAME="decade_counter_3_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_4" PORT="INCREMENT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decade_counter_4" HWVERSION="1.0" INSTANCE="decade_counter_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decade_counter" VLNV="xilinx.com:module_ref:decade_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_decade_counter_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="finite_state_machine_0_counter_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="finite_state_machine_0_counter_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INCREMENT" SIGIS="undef" SIGNAME="decade_counter_3_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_3" PORT="TICK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="COUNT" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_4_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="COUNT_5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TICK" SIGIS="undef" SIGNAME="decade_counter_4_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_5" PORT="INCREMENT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decade_counter_5" HWVERSION="1.0" INSTANCE="decade_counter_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decade_counter" VLNV="xilinx.com:module_ref:decade_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_decade_counter_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="finite_state_machine_0_counter_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="finite_state_machine_0_counter_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INCREMENT" SIGIS="undef" SIGNAME="decade_counter_4_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_4" PORT="TICK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="COUNT" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_5_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="COUNT_6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TICK" SIGIS="undef" SIGNAME="decade_counter_5_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_6" PORT="INCREMENT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decade_counter_6" HWVERSION="1.0" INSTANCE="decade_counter_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decade_counter" VLNV="xilinx.com:module_ref:decade_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_decade_counter_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="finite_state_machine_0_counter_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="finite_state_machine_0_counter_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INCREMENT" SIGIS="undef" SIGNAME="decade_counter_5_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_5" PORT="TICK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="COUNT" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_6_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="COUNT_7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TICK" SIGIS="undef" SIGNAME="decade_counter_6_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_7" PORT="INCREMENT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decade_counter_7" HWVERSION="1.0" INSTANCE="decade_counter_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decade_counter" VLNV="xilinx.com:module_ref:decade_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_decade_counter_7_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="finite_state_machine_0_counter_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="finite_state_machine_0_counter_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="counter_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INCREMENT" SIGIS="undef" SIGNAME="decade_counter_6_TICK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_6" PORT="TICK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="COUNT" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_7_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="COUNT_8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TICK" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/finite_state_machine_0" HWVERSION="1.0" INSTANCE="finite_state_machine_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="finite_state_machine" VLNV="xilinx.com:module_ref:finite_state_machine:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_finite_state_machine_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_divider_0_SLOWCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="SLOWCLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_CPU_RESETN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CPU_RESETN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTNC" SIGIS="undef" SIGNAME="External_Ports_BTNC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTNU" SIGIS="undef" SIGNAME="External_Ports_BTNU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTND" SIGIS="undef" SIGNAME="External_Ports_BTND">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTND"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTNR" SIGIS="undef" SIGNAME="External_Ports_BTNR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BTNL" SIGIS="undef" SIGNAME="External_Ports_BTNL">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTNL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="COUNT_1" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_0_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_0" PORT="COUNT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="COUNT_2" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_1_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_1" PORT="COUNT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="COUNT_3" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_2_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_2" PORT="COUNT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="COUNT_4" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_3_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_3" PORT="COUNT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="COUNT_5" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_4_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_4" PORT="COUNT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="COUNT_6" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_5_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_5" PORT="COUNT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="COUNT_7" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_6_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_6" PORT="COUNT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="COUNT_8" RIGHT="0" SIGIS="undef" SIGNAME="decade_counter_7_COUNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_7" PORT="COUNT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="counter_en" SIGIS="undef" SIGNAME="finite_state_machine_0_counter_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_3" PORT="EN"/>
+            <CONNECTION INSTANCE="decade_counter_0" PORT="EN"/>
+            <CONNECTION INSTANCE="decade_counter_1" PORT="EN"/>
+            <CONNECTION INSTANCE="decade_counter_2" PORT="EN"/>
+            <CONNECTION INSTANCE="decade_counter_4" PORT="EN"/>
+            <CONNECTION INSTANCE="decade_counter_5" PORT="EN"/>
+            <CONNECTION INSTANCE="decade_counter_6" PORT="EN"/>
+            <CONNECTION INSTANCE="decade_counter_7" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="counter_rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="finite_state_machine_0_counter_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decade_counter_2" PORT="RESET"/>
+            <CONNECTION INSTANCE="decade_counter_1" PORT="RESET"/>
+            <CONNECTION INSTANCE="decade_counter_0" PORT="RESET"/>
+            <CONNECTION INSTANCE="decade_counter_3" PORT="RESET"/>
+            <CONNECTION INSTANCE="decade_counter_4" PORT="RESET"/>
+            <CONNECTION INSTANCE="decade_counter_5" PORT="RESET"/>
+            <CONNECTION INSTANCE="decade_counter_6" PORT="RESET"/>
+            <CONNECTION INSTANCE="decade_counter_7" PORT="RESET"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="message" RIGHT="0" SIGIS="undef" SIGNAME="finite_state_machine_0_message">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sevseg_mux_0" PORT="message"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sevseg_mux_0" HWVERSION="1.0" INSTANCE="sevseg_mux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sevseg_mux" VLNV="xilinx.com:module_ref:sevseg_mux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_sevseg_mux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="2" NAME="display_select" RIGHT="0" SIGIS="undef" SIGNAME="DisplaySelector_0_CURRENT_DISPLAY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DisplaySelector_0" PORT="CURRENT_DISPLAY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="message" RIGHT="0" SIGIS="undef" SIGNAME="finite_state_machine_0_message">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="finite_state_machine_0" PORT="message"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BCD" RIGHT="0" SIGIS="undef" SIGNAME="sevseg_mux_0_BCD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcd_to_7seg_1" PORT="bcd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DCP" SIGIS="undef" SIGNAME="sevseg_mux_0_DCP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="bcd_to_7seg_1" PORT="dcp"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="28"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0004240"/>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="27" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_1" PORT="UPPERBOUND"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="28"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0004240"/>
+        <PARAMETER NAME="Component_Name" VALUE="Reaction_Timer_xlconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="27" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="UPPERBOUND"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

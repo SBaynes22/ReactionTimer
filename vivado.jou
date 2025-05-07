@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu May  8 00:02:19 2025
+# Process ID: 9064
+# Current directory: B:/enel373/PersonalRXtimer/ReactionTimer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14720 B:\enel373\PersonalRXtimer\ReactionTimer\Reaction Timer.xpr
+# Log file: B:/enel373/PersonalRXtimer/ReactionTimer/vivado.log
+# Journal file: B:/enel373/PersonalRXtimer/ReactionTimer\vivado.jou
+# Running On: DESKTOP-H6N6V0T, OS: Windows, CPU Frequency: 3192 MHz, CPU Physical cores: 6, Host memory: 17088 MB
+#-----------------------------------------------------------
+start_gui
+open_project {B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.xpr}
+update_module_reference Reaction_Timer_sevseg_mux_0_0
+update_compile_order -fileset sources_1
+set_property location {4 1125 -518} [get_bd_cells clock_divider_1]
+delete_bd_objs [get_bd_nets sevseg_mux_0_BCD] [get_bd_cells bcd_to_7seg_1_upgraded_ipi]
+set_property location {4 1163 44} [get_bd_cells bcd_to_7seg_1]
+connect_bd_net [get_bd_pins sevseg_mux_0/BCD] [get_bd_pins bcd_to_7seg_1/bcd]
+set_property location {4 1108 -293} [get_bd_cells clock_divider_1]
+connect_bd_net [get_bd_pins sevseg_mux_0/DCP] [get_bd_pins bcd_to_7seg_1/dcp]
+create_bd_port -dir O CA
+create_bd_port -dir I CB
+set_property location {1345 32} [get_bd_ports CB]
+delete_bd_objs [get_bd_ports CB]
+create_bd_port -dir O CB
+create_bd_port -dir O CC
+set_property location {1331 -9} [get_bd_ports CB]
+startgroup
+connect_bd_net [get_bd_ports CA] [get_bd_pins bcd_to_7seg_1/CA]
+connect_bd_net [get_bd_ports CB] [get_bd_pins bcd_to_7seg_1/CA]
+endgroup
+undo
+connect_bd_net [get_bd_ports CB] [get_bd_pins bcd_to_7seg_1/CB]
+set_property location {1331 -28} [get_bd_ports CA]
+connect_bd_net [get_bd_ports CA] [get_bd_pins bcd_to_7seg_1/CA]
+set_property location {1336 10} [get_bd_ports CC]
+connect_bd_net [get_bd_ports CC] [get_bd_pins bcd_to_7seg_1/CC]
+create_bd_port -dir O CD
+connect_bd_net [get_bd_ports CD] [get_bd_pins bcd_to_7seg_1/CD]
+create_bd_port -dir O CE
+connect_bd_net [get_bd_ports CE] [get_bd_pins bcd_to_7seg_1/CE]
+create_bd_port -dir O CF
+connect_bd_net [get_bd_ports CF] [get_bd_pins bcd_to_7seg_1/CF]
+create_bd_port -dir O CG
+connect_bd_net [get_bd_ports CG] [get_bd_pins bcd_to_7seg_1/CG]
+create_bd_port -dir O DP
+connect_bd_net [get_bd_ports DP] [get_bd_pins bcd_to_7seg_1/DP]
+save_bd_design
+make_wrapper -files [get_files {{B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/sources_1/bd/Reaction_Timer/Reaction_Timer.bd}}] -top
+startgroup
+set_property CONFIG.CONST_VAL {16960} [get_bd_cells xlconstant_1]
+endgroup
+startgroup
+endgroup
+startgroup
+set_property CONFIG.CONST_VAL {16960} [get_bd_cells xlconstant_0]
+endgroup
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+connect_hw_server -allow_non_jtag
+close_hw_manager
+set_property location {2 285 -467} [get_bd_cells decade_counter_3]
+set_property location {2 267 253} [get_bd_cells decade_counter_0]
+set_property location {2 267 99} [get_bd_cells decade_counter_1]
+set_property location {2 271 -32} [get_bd_cells decade_counter_2]
+set_property location {2 273 -153} [get_bd_cells decade_counter_3]
+update_module_reference Reaction_Timer_finite_state_machine_0_0
+set_property location {1.5 40 -88} [get_bd_cells xlconstant_0]
+set_property location {1 -101 -99} [get_bd_cells xlconstant_1]
+create_bd_port -dir I BTNU
+create_bd_port -dir I BTND
+create_bd_port -dir I BTNR
+create_bd_port -dir I BTNL
+connect_bd_net [get_bd_ports BTNU] [get_bd_pins finite_state_machine_0/BTNU]
+connect_bd_net [get_bd_ports BTND] [get_bd_pins finite_state_machine_0/BTND]
+connect_bd_net [get_bd_ports BTNR] [get_bd_pins finite_state_machine_0/BTNR]
+connect_bd_net [get_bd_ports BTNL] [get_bd_pins finite_state_machine_0/BTNL]
+create_bd_cell -type module -reference decade_counter decade_counter_4
+set_property location {4 652 -318} [get_bd_cells decade_counter_4]
+create_bd_cell -type module -reference decade_counter decade_counter_5
+set_property location {4 661 -478} [get_bd_cells decade_counter_5]
+create_bd_cell -type module -reference decade_counter decade_counter_6
+create_bd_cell -type module -reference decade_counter decade_counter_7
+connect_bd_net [get_bd_pins decade_counter_4/EN] [get_bd_pins finite_state_machine_0/counter_en]
+connect_bd_net [get_bd_pins decade_counter_5/EN] [get_bd_pins finite_state_machine_0/counter_en]
+connect_bd_net [get_bd_pins decade_counter_6/EN] [get_bd_pins finite_state_machine_0/counter_en]
+connect_bd_net [get_bd_pins decade_counter_7/EN] [get_bd_pins finite_state_machine_0/counter_en]
+connect_bd_net [get_bd_pins decade_counter_4/RESET] [get_bd_pins finite_state_machine_0/counter_rst]
+connect_bd_net [get_bd_pins decade_counter_5/RESET] [get_bd_pins finite_state_machine_0/counter_rst]
+connect_bd_net [get_bd_pins decade_counter_6/RESET] [get_bd_pins finite_state_machine_0/counter_rst]
+connect_bd_net [get_bd_pins decade_counter_7/RESET] [get_bd_pins finite_state_machine_0/counter_rst]
+connect_bd_net [get_bd_pins decade_counter_4/TICK] [get_bd_pins finite_state_machine_0/COUNT_5]
+delete_bd_objs [get_bd_nets decade_counter_4_TICK]
+connect_bd_net [get_bd_pins decade_counter_4/COUNT] [get_bd_pins finite_state_machine_0/COUNT_5]
+connect_bd_net [get_bd_pins decade_counter_5/COUNT] [get_bd_pins finite_state_machine_0/COUNT_6]
+connect_bd_net [get_bd_pins decade_counter_6/COUNT] [get_bd_pins finite_state_machine_0/COUNT_7]
+connect_bd_net [get_bd_pins decade_counter_7/COUNT] [get_bd_pins finite_state_machine_0/COUNT_8]
+connect_bd_net [get_bd_pins decade_counter_3/TICK] [get_bd_pins decade_counter_4/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_4/TICK] [get_bd_pins decade_counter_5/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_5/TICK] [get_bd_pins decade_counter_6/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_6/TICK] [get_bd_pins decade_counter_7/INCREMENT]
+undo
+undo
+undo
+undo
+connect_bd_net [get_bd_pins decade_counter_3/TICK] [get_bd_pins decade_counter_4/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_4/TICK] [get_bd_pins decade_counter_5/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_5/TICK] [get_bd_pins decade_counter_6/INCREMENT]
+connect_bd_net [get_bd_pins decade_counter_6/TICK] [get_bd_pins decade_counter_7/INCREMENT]
+save_bd_design
+update_module_reference Reaction_Timer_finite_state_machine_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+update_module_reference Reaction_Timer_finite_state_machine_0_0
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1

@@ -1,22 +1,86 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.978462",
-   "Default View_TopLeft":"-75,-478",
+   "Default View_ScaleFactor":"0.571695",
+   "Default View_TopLeft":"-366,-686",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace inst finite_state_machine_0 -pg 1 -lvl 2 -x 440 -y 150 -defaultsOSRD
-preplace inst clock_divider_0 -pg 1 -lvl 3 -x 800 -y 0 -defaultsOSRD
-preplace inst AnodeDecoder_0 -pg 1 -lvl 3 -x 800 -y -120 -defaultsOSRD
-preplace inst decade_counter_0 -pg 1 -lvl 1 -x 100 -y -60 -defaultsOSRD
-preplace inst decade_counter_1 -pg 1 -lvl 1 -x 100 -y -200 -defaultsOSRD
-preplace inst decade_counter_2 -pg 1 -lvl 1 -x 100 -y -340 -defaultsOSRD
-preplace inst decade_counter_3 -pg 1 -lvl 1 -x 100 -y 80 -defaultsOSRD
-preplace inst DisplaySelector_0 -pg 1 -lvl 2 -x 440 -y -10 -defaultsOSRD
-preplace inst bcd_to_7seg_1 -pg 1 -lvl 2 -x 440 -y -240 -defaultsOSRD
-preplace netloc decade_counter_1_TICK 1 0 2 -40 -420 240
-levelinfo -pg 1 -60 100 440 800 980
-pagesize -pg 1 -db -bbox -sgen -60 -430 980 450
+preplace port port-id_BTNC -pg 1 -lvl 0 -x -240 -y 320 -defaultsOSRD
+preplace port port-id_CPU_RESETN -pg 1 -lvl 0 -x -240 -y 360 -defaultsOSRD
+preplace port port-id_CLK100MHZ -pg 1 -lvl 0 -x -240 -y 420 -defaultsOSRD
+preplace port port-id_CA -pg 1 -lvl 6 -x 1750 -y -30 -defaultsOSRD
+preplace port port-id_CB -pg 1 -lvl 6 -x 1750 -y -10 -defaultsOSRD
+preplace port port-id_CC -pg 1 -lvl 6 -x 1750 -y 10 -defaultsOSRD
+preplace port port-id_CD -pg 1 -lvl 6 -x 1750 -y 30 -defaultsOSRD
+preplace port port-id_CE -pg 1 -lvl 6 -x 1750 -y 50 -defaultsOSRD
+preplace port port-id_CF -pg 1 -lvl 6 -x 1750 -y 70 -defaultsOSRD
+preplace port port-id_CG -pg 1 -lvl 6 -x 1750 -y 90 -defaultsOSRD
+preplace port port-id_DP -pg 1 -lvl 6 -x 1750 -y 110 -defaultsOSRD
+preplace port port-id_BTNU -pg 1 -lvl 0 -x -240 -y 470 -defaultsOSRD
+preplace port port-id_BTND -pg 1 -lvl 0 -x -240 -y 510 -defaultsOSRD
+preplace port port-id_BTNR -pg 1 -lvl 0 -x -240 -y 540 -defaultsOSRD
+preplace port port-id_BTNL -pg 1 -lvl 0 -x -240 -y 570 -defaultsOSRD
+preplace portBus AN -pg 1 -lvl 6 -x 1750 -y -130 -defaultsOSRD
+preplace inst AnodeDecoder_0 -pg 1 -lvl 5 -x 1550 -y -130 -defaultsOSRD
+preplace inst decade_counter_0 -pg 1 -lvl 3 -x 630 -y 270 -defaultsOSRD
+preplace inst decade_counter_1 -pg 1 -lvl 3 -x 630 -y 130 -defaultsOSRD
+preplace inst decade_counter_2 -pg 1 -lvl 3 -x 630 -y -10 -defaultsOSRD
+preplace inst decade_counter_3 -pg 1 -lvl 3 -x 630 -y -150 -defaultsOSRD
+preplace inst DisplaySelector_0 -pg 1 -lvl 4 -x 1160 -y 50 -defaultsOSRD
+preplace inst clock_divider_0 -pg 1 -lvl 5 -x 1550 -y 230 -defaultsOSRD
+preplace inst bcd_to_7seg_1 -pg 1 -lvl 5 -x 1550 -y 40 -defaultsOSRD
+preplace inst clock_divider_1 -pg 1 -lvl 5 -x 1550 -y -290 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 90 -y -90 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x -130 -y -100 -defaultsOSRD
+preplace inst sevseg_mux_0 -pg 1 -lvl 4 -x 1160 -y -80 -defaultsOSRD
+preplace inst decade_counter_4 -pg 1 -lvl 3 -x 630 -y -320 -defaultsOSRD
+preplace inst decade_counter_5 -pg 1 -lvl 3 -x 630 -y -480 -defaultsOSRD
+preplace inst decade_counter_6 -pg 1 -lvl 3 -x 630 -y -630 -defaultsOSRD
+preplace inst decade_counter_7 -pg 1 -lvl 3 -x 630 -y -770 -defaultsOSRD
+preplace inst finite_state_machine_0 -pg 1 -lvl 4 -x 1160 -y 290 -defaultsOSRD
+preplace netloc AnodeDecoder_0_ANODE 1 5 1 N -130
+preplace netloc BTNC_1 1 0 4 -220 350 N 350 N 350 840J
+preplace netloc CLK100MHZ_1 1 0 5 NJ 420 N 420 170 460 770J 490 1370
+preplace netloc CPU_RESETN_1 1 0 4 NJ 360 N 360 190 370 830
+preplace netloc DisplaySelector_0_CURRENT_DISPLAY 1 3 2 980 -10 1340
+preplace netloc Net 1 2 3 220 520 N 520 1350
+preplace netloc clock_divider_0_SLOWCLK 1 2 4 250 420 940J 510 NJ 510 1720
+preplace netloc clock_divider_1_SLOWCLK 1 3 3 960 -190 NJ -190 1720
+preplace netloc decade_counter_0_COUNT 1 3 1 860 260n
+preplace netloc decade_counter_0_TICK 1 2 2 270 380 770
+preplace netloc decade_counter_1_COUNT 1 3 1 870 120n
+preplace netloc decade_counter_1_TICK 1 2 2 260 360 780
+preplace netloc decade_counter_2_COUNT 1 3 1 880 -20n
+preplace netloc decade_counter_2_TICK 1 2 2 240 390 790
+preplace netloc decade_counter_3_COUNT 1 3 1 890 -160n
+preplace netloc finite_state_machine_0_counter_en 1 2 3 210 530 NJ 530 1360
+preplace netloc finite_state_machine_0_message 1 3 2 970 500 1340
+preplace netloc xlconstant_0_dout 1 2 3 200 410 820J -280 NJ
+preplace netloc xlconstant_1_dout 1 1 4 -50 340 180 550 NJ 550 1380J
+preplace netloc sevseg_mux_0_BCD 1 4 1 1380 -90n
+preplace netloc sevseg_mux_0_DCP 1 4 1 1350 -70n
+preplace netloc bcd_to_7seg_1_CB 1 5 1 N -10
+preplace netloc bcd_to_7seg_1_CA 1 5 1 N -30
+preplace netloc bcd_to_7seg_1_CC 1 5 1 N 10
+preplace netloc bcd_to_7seg_1_CD 1 5 1 N 30
+preplace netloc bcd_to_7seg_1_CE 1 5 1 N 50
+preplace netloc bcd_to_7seg_1_CF 1 5 1 N 70
+preplace netloc bcd_to_7seg_1_CG 1 5 1 N 90
+preplace netloc bcd_to_7seg_1_DP 1 5 1 N 110
+preplace netloc BTNU_1 1 0 4 NJ 470 NJ 470 NJ 470 850
+preplace netloc BTND_1 1 0 4 NJ 510 NJ 510 NJ 510 810
+preplace netloc BTNR_1 1 0 4 NJ 540 NJ 540 NJ 540 950
+preplace netloc BTNL_1 1 0 4 NJ 570 NJ 570 NJ 570 960
+preplace netloc decade_counter_4_COUNT 1 3 1 900 -330n
+preplace netloc decade_counter_5_COUNT 1 3 1 910 -490n
+preplace netloc decade_counter_6_COUNT 1 3 1 920 -640n
+preplace netloc decade_counter_7_COUNT 1 3 1 930 -780n
+preplace netloc decade_counter_3_TICK 1 2 2 270 -230 790
+preplace netloc decade_counter_4_TICK 1 2 2 260 -240 790
+preplace netloc decade_counter_5_TICK 1 2 2 230 400 800
+preplace netloc decade_counter_6_TICK 1 2 2 250 -400 790
+levelinfo -pg 1 -240 -130 90 630 1160 1550 1750
+pagesize -pg 1 -db -bbox -sgen -390 -850 1850 600
 "
 }
 {

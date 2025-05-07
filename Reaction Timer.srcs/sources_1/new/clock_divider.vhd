@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity clock_divider is
-    Port ( CLK100MHZ : in STD_LOGIC;
+    Port ( CLK : in STD_LOGIC;
            UPPERBOUND : in STD_LOGIC_VECTOR (27 downto 0);
            SLOWCLK : out STD_LOGIC);
 end clock_divider;

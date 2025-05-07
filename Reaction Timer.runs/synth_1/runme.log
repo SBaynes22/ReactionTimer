@@ -1,0 +1,367 @@
+
+*** Running vivado
+    with args -log Reaction_Timer_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Reaction_Timer_wrapper.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Reaction_Timer_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'B:/Vivado/Vivado/2022.2/data/ip'.
+add_files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 423.699 ; gain = 28.844
+Command: read_checkpoint -auto_incremental -incremental {B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/utils_1/imports/synth_1/Reaction_Timer_wrapper.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.srcs/utils_1/imports/synth_1/Reaction_Timer_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Reaction_Timer_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1884
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [B:/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1235.879 ; gain = 408.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_wrapper' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/hdl/Reaction_Timer_wrapper.vhd:35]
+INFO: [Synth 8-3491] module 'Reaction_Timer' declared at 'b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:14' bound to instance 'Reaction_Timer_i' of component 'Reaction_Timer' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/hdl/Reaction_Timer_wrapper.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:39]
+INFO: [Synth 8-3491] module 'Reaction_Timer_AnodeDecoder_0_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_AnodeDecoder_0_0_stub.vhdl:5' bound to instance 'AnodeDecoder_0' of component 'Reaction_Timer_AnodeDecoder_0_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_AnodeDecoder_0_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_AnodeDecoder_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Reaction_Timer_DisplaySelector_0_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_DisplaySelector_0_0_stub.vhdl:5' bound to instance 'DisplaySelector_0' of component 'Reaction_Timer_DisplaySelector_0_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:256]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_DisplaySelector_0_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_DisplaySelector_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Reaction_Timer_bcd_to_7seg_1_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_bcd_to_7seg_1_0_stub.vhdl:5' bound to instance 'bcd_to_7seg_1' of component 'Reaction_Timer_bcd_to_7seg_1_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_bcd_to_7seg_1_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_bcd_to_7seg_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'Reaction_Timer_clock_divider_0_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_clock_divider_0_0_stub.vhdl:5' bound to instance 'clock_divider_0' of component 'Reaction_Timer_clock_divider_0_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:274]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_clock_divider_0_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_clock_divider_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Reaction_Timer_clock_divider_1_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_clock_divider_1_0_stub.vhdl:5' bound to instance 'clock_divider_1' of component 'Reaction_Timer_clock_divider_1_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:280]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_clock_divider_1_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_clock_divider_1_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Reaction_Timer_decade_counter_0_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_0_0_stub.vhdl:5' bound to instance 'decade_counter_0' of component 'Reaction_Timer_decade_counter_0_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:286]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_decade_counter_0_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Reaction_Timer_decade_counter_1_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_1_0_stub.vhdl:5' bound to instance 'decade_counter_1' of component 'Reaction_Timer_decade_counter_1_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:294]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_decade_counter_1_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Reaction_Timer_decade_counter_2_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_2_0_stub.vhdl:5' bound to instance 'decade_counter_2' of component 'Reaction_Timer_decade_counter_2_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:302]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_decade_counter_2_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_2_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Reaction_Timer_decade_counter_3_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_3_0_stub.vhdl:5' bound to instance 'decade_counter_3' of component 'Reaction_Timer_decade_counter_3_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:310]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_decade_counter_3_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_3_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Reaction_Timer_decade_counter_4_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_4_0_stub.vhdl:5' bound to instance 'decade_counter_4' of component 'Reaction_Timer_decade_counter_4_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:318]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_decade_counter_4_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_4_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Reaction_Timer_decade_counter_5_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_5_0_stub.vhdl:5' bound to instance 'decade_counter_5' of component 'Reaction_Timer_decade_counter_5_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:326]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_decade_counter_5_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_5_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Reaction_Timer_decade_counter_6_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_6_0_stub.vhdl:5' bound to instance 'decade_counter_6' of component 'Reaction_Timer_decade_counter_6_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:334]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_decade_counter_6_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_6_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Reaction_Timer_decade_counter_7_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_7_0_stub.vhdl:5' bound to instance 'decade_counter_7' of component 'Reaction_Timer_decade_counter_7_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:342]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_decade_counter_7_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_decade_counter_7_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Reaction_Timer_finite_state_machine_0_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_finite_state_machine_0_0_stub.vhdl:5' bound to instance 'finite_state_machine_0' of component 'Reaction_Timer_finite_state_machine_0_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:350]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_finite_state_machine_0_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_finite_state_machine_0_0_stub.vhdl:29]
+INFO: [Synth 8-3491] module 'Reaction_Timer_sevseg_mux_0_0' declared at 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_sevseg_mux_0_0_stub.vhdl:5' bound to instance 'sevseg_mux_0' of component 'Reaction_Timer_sevseg_mux_0_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:371]
+INFO: [Synth 8-638] synthesizing module 'Reaction_Timer_sevseg_mux_0_0' [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/.Xil/Vivado-568-DESKTOP-H6N6V0T/realtime/Reaction_Timer_sevseg_mux_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Reaction_Timer_xlconstant_0_0' declared at 'b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_xlconstant_0_0/synth/Reaction_Timer_xlconstant_0_0.v:53' bound to instance 'xlconstant_0' of component 'Reaction_Timer_xlconstant_0_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:378]
+INFO: [Synth 8-6157] synthesizing module 'Reaction_Timer_xlconstant_0_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_xlconstant_0_0/synth/Reaction_Timer_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reaction_Timer_xlconstant_0_0' (0#1) [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_xlconstant_0_0/synth/Reaction_Timer_xlconstant_0_0.v:53]
+INFO: [Synth 8-3491] module 'Reaction_Timer_xlconstant_1_0' declared at 'b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_xlconstant_1_0/synth/Reaction_Timer_xlconstant_1_0.v:53' bound to instance 'xlconstant_1' of component 'Reaction_Timer_xlconstant_1_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:382]
+INFO: [Synth 8-6157] synthesizing module 'Reaction_Timer_xlconstant_1_0' [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_xlconstant_1_0/synth/Reaction_Timer_xlconstant_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'Reaction_Timer_xlconstant_1_0' (0#1) [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_xlconstant_1_0/synth/Reaction_Timer_xlconstant_1_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'Reaction_Timer' (0#1) [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/synth/Reaction_Timer.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Reaction_Timer_wrapper' (0#1) [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/hdl/Reaction_Timer_wrapper.vhd:35]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1326.395 ; gain = 499.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1326.395 ; gain = 499.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1326.395 ; gain = 499.219
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1326.395 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_AnodeDecoder_0_0/Reaction_Timer_AnodeDecoder_0_0/Reaction_Timer_AnodeDecoder_0_0_in_context.xdc] for cell 'Reaction_Timer_i/AnodeDecoder_0'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_AnodeDecoder_0_0/Reaction_Timer_AnodeDecoder_0_0/Reaction_Timer_AnodeDecoder_0_0_in_context.xdc] for cell 'Reaction_Timer_i/AnodeDecoder_0'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_0_0/Reaction_Timer_decade_counter_0_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_0'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_0_0/Reaction_Timer_decade_counter_0_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_0'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_1_0/Reaction_Timer_decade_counter_1_0/Reaction_Timer_decade_counter_1_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_1'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_1_0/Reaction_Timer_decade_counter_1_0/Reaction_Timer_decade_counter_1_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_1'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_2_0/Reaction_Timer_decade_counter_2_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_2'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_2_0/Reaction_Timer_decade_counter_2_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_2'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_3_0/Reaction_Timer_decade_counter_3_0/Reaction_Timer_decade_counter_3_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_3'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_3_0/Reaction_Timer_decade_counter_3_0/Reaction_Timer_decade_counter_3_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_3'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_DisplaySelector_0_0/Reaction_Timer_DisplaySelector_0_0/Reaction_Timer_DisplaySelector_0_0_in_context.xdc] for cell 'Reaction_Timer_i/DisplaySelector_0'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_DisplaySelector_0_0/Reaction_Timer_DisplaySelector_0_0/Reaction_Timer_DisplaySelector_0_0_in_context.xdc] for cell 'Reaction_Timer_i/DisplaySelector_0'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_clock_divider_0_0/Reaction_Timer_clock_divider_0_0/Reaction_Timer_clock_divider_0_0_in_context.xdc] for cell 'Reaction_Timer_i/clock_divider_0'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_clock_divider_0_0/Reaction_Timer_clock_divider_0_0/Reaction_Timer_clock_divider_0_0_in_context.xdc] for cell 'Reaction_Timer_i/clock_divider_0'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_bcd_to_7seg_1_0/Reaction_Timer_bcd_to_7seg_1_0/Reaction_Timer_bcd_to_7seg_1_0_in_context.xdc] for cell 'Reaction_Timer_i/bcd_to_7seg_1'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_bcd_to_7seg_1_0/Reaction_Timer_bcd_to_7seg_1_0/Reaction_Timer_bcd_to_7seg_1_0_in_context.xdc] for cell 'Reaction_Timer_i/bcd_to_7seg_1'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_clock_divider_1_0/Reaction_Timer_clock_divider_1_0/Reaction_Timer_clock_divider_0_0_in_context.xdc] for cell 'Reaction_Timer_i/clock_divider_1'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_clock_divider_1_0/Reaction_Timer_clock_divider_1_0/Reaction_Timer_clock_divider_0_0_in_context.xdc] for cell 'Reaction_Timer_i/clock_divider_1'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_sevseg_mux_0_0/Reaction_Timer_sevseg_mux_0_0/Reaction_Timer_sevseg_mux_0_0_in_context.xdc] for cell 'Reaction_Timer_i/sevseg_mux_0'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_sevseg_mux_0_0/Reaction_Timer_sevseg_mux_0_0/Reaction_Timer_sevseg_mux_0_0_in_context.xdc] for cell 'Reaction_Timer_i/sevseg_mux_0'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_4_0/Reaction_Timer_decade_counter_4_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_4'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_4_0/Reaction_Timer_decade_counter_4_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_4'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_5_0/Reaction_Timer_decade_counter_5_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_5'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_5_0/Reaction_Timer_decade_counter_5_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_5'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_6_0/Reaction_Timer_decade_counter_6_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_6'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_6_0/Reaction_Timer_decade_counter_6_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_6'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_7_0/Reaction_Timer_decade_counter_7_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_7'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_decade_counter_7_0/Reaction_Timer_decade_counter_7_0/Reaction_Timer_decade_counter_0_0_in_context.xdc] for cell 'Reaction_Timer_i/decade_counter_7'
+Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_finite_state_machine_0_0/Reaction_Timer_finite_state_machine_0_0/Reaction_Timer_finite_state_machine_0_0_in_context.xdc] for cell 'Reaction_Timer_i/finite_state_machine_0'
+Finished Parsing XDC File [b:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.gen/sources_1/bd/Reaction_Timer/ip/Reaction_Timer_finite_state_machine_0_0/Reaction_Timer_finite_state_machine_0_0/Reaction_Timer_finite_state_machine_0_0_in_context.xdc] for cell 'Reaction_Timer_i/finite_state_machine_0'
+Parsing XDC File [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc:48]
+Finished Parsing XDC File [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Reaction_Timer_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [B:/enel373/RxTimer/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Reaction_Timer_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Reaction_Timer_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1346.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1346.223 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [B:/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/AnodeDecoder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/decade_counter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/decade_counter_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/decade_counter_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/decade_counter_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/DisplaySelector_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/clock_divider_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/bcd_to_7seg_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/clock_divider_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/sevseg_mux_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/decade_counter_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/decade_counter_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/decade_counter_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/decade_counter_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Reaction_Timer_i/finite_state_machine_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------------+----------+
+|      |BlackBox name                           |Instances |
++------+----------------------------------------+----------+
+|1     |Reaction_Timer_AnodeDecoder_0_0         |         1|
+|2     |Reaction_Timer_DisplaySelector_0_0      |         1|
+|3     |Reaction_Timer_bcd_to_7seg_1_0          |         1|
+|4     |Reaction_Timer_clock_divider_0_0        |         1|
+|5     |Reaction_Timer_clock_divider_1_0        |         1|
+|6     |Reaction_Timer_decade_counter_0_0       |         1|
+|7     |Reaction_Timer_decade_counter_1_0       |         1|
+|8     |Reaction_Timer_decade_counter_2_0       |         1|
+|9     |Reaction_Timer_decade_counter_3_0       |         1|
+|10    |Reaction_Timer_decade_counter_4_0       |         1|
+|11    |Reaction_Timer_decade_counter_5_0       |         1|
+|12    |Reaction_Timer_decade_counter_6_0       |         1|
+|13    |Reaction_Timer_decade_counter_7_0       |         1|
+|14    |Reaction_Timer_finite_state_machine_0_0 |         1|
+|15    |Reaction_Timer_sevseg_mux_0_0           |         1|
++------+----------------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------------------+------+
+|      |Cell                                         |Count |
++------+---------------------------------------------+------+
+|1     |Reaction_Timer_AnodeDecoder_0_0_bbox         |     1|
+|2     |Reaction_Timer_DisplaySelector_0_0_bbox      |     1|
+|3     |Reaction_Timer_bcd_to_7seg_1_0_bbox          |     1|
+|4     |Reaction_Timer_clock_divider_0_0_bbox        |     1|
+|5     |Reaction_Timer_clock_divider_1_0_bbox        |     1|
+|6     |Reaction_Timer_decade_counter_0_0_bbox       |     1|
+|7     |Reaction_Timer_decade_counter_1_0_bbox       |     1|
+|8     |Reaction_Timer_decade_counter_2_0_bbox       |     1|
+|9     |Reaction_Timer_decade_counter_3_0_bbox       |     1|
+|10    |Reaction_Timer_decade_counter_4_0_bbox       |     1|
+|11    |Reaction_Timer_decade_counter_5_0_bbox       |     1|
+|12    |Reaction_Timer_decade_counter_6_0_bbox       |     1|
+|13    |Reaction_Timer_decade_counter_7_0_bbox       |     1|
+|14    |Reaction_Timer_finite_state_machine_0_0_bbox |     1|
+|15    |Reaction_Timer_sevseg_mux_0_0_bbox           |     1|
+|16    |IBUF                                         |     7|
+|17    |OBUF                                         |    16|
++------+---------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1346.223 ; gain = 519.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1346.223 ; gain = 499.219
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1346.223 ; gain = 519.047
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1350.535 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1354.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: e18fc1a1
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1354.176 ; gain = 925.504
+INFO: [Common 17-1381] The checkpoint 'B:/enel373/PersonalRXtimer/ReactionTimer/Reaction Timer.runs/synth_1/Reaction_Timer_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Reaction_Timer_wrapper_utilization_synth.rpt -pb Reaction_Timer_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  8 01:20:50 2025...

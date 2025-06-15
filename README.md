@@ -1,5 +1,5 @@
 
-# ENEL373 Reaction Timer Project
+# Reaction Timer Project
 
 This Repository contains the necessary VHDL files to run the reaction timer project based on the Nexys-4-DDR Board. The reaction timer operates as follows:
 

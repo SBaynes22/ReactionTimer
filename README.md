@@ -1,0 +1,7 @@
+
+# ENEL373 Reaction Timer Project
+
+This Repository contains the necessary VHDL files to run the reaction timer project based on the Nexys-4-DDR Board. The reaction timer operates as follows:
+
+From startup, a 3 dot sequence will light up on the seven segment display, and will turn off in a sequential order, at random intervals. If the central button is pressed before the dots are all off, an error will appear on screen and the result will be void. Once the dots are off, a timer will begin to count on the seven segment display. To stop the counter press the central button (BTNC), which will record the data to compare with other results. Once in the printing stage after a test, pressing the right button (BTNR) will display the average of the last three results, indicating an "A" for average. Pressing BTNC will return the user back to the previous test result. To get the shortest of the last three times, press the lower button (BTND), which will display an "S" for shortest. A similar method to get back to the printing screen is pressing BTNC. To get the longest time, press the upper button(BTNU), and again BTNC to return to printing stage. To clear all recent test data, the left button should be pressed (BTNL), which will immediately send the user back into another test beginning with the 3 dot sequence. An additional feature is if the user takes "too long" (over 10 seconds) the reaction timer will time out, display an error and void the result.
+
